@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="./portfolio.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-alabaster text-taupe font-times">
+    <div class="flex justify-center p-4 gap-10 sticky top-0 bg-alabaster md:justify-end md:pr-10">
+        <a class="text-darkBrown hover:font-semibold hover:text-beige hover:underline hover:decoration-beige hover:decoration-2 hover:underline-offset-8 active:text-taupe active:decoration-taupe" href="#">About</a>
+        <a class="text-darkBrown hover:font-semibold hover:text-beige hover:underline hover:decoration-beige hover:decoration-2 hover:underline-offset-8 active:text-taupe active:decoration-taupe" href="#project">Projects</a>
+        <a class="text-darkBrown hover:font-semibold hover:text-beige hover:underline hover:decoration-beige hover:decoration-2 hover:underline-offset-8 active:text-taupe active:decoration-taupe" href="#contact">Contact</a> 
+    </div>
+    <header>
+        <div class="flex flex-col justify-center items-center p-10 font-bold text-center">  
+            <h1 class="text-3xl text-darkBrown leading-loose">Welcome to my portfolio!!</h1>
+            <p class="px-33 md:px-60">My name is Wan Shuen. I am a Year 2 diploma student in Computer Science with an interest in web design. 
+                <br> This portfolio is a reflection of my journey as a student, featuring projects that allowed me to experiment, learn, and grow. 
+                <br> I believe in continuous improvement and am excited to bring my ideas to life in professional environments.
+                <br> Thank you for taking time to visit my portfolio.
+            </p>
+        </div>
+    </header>
+    <hr class="border-lightBrown mx-8">
+    <section class="py-14 px-20">
+        <div class="flex flex-col items-center md:flex-row md:justify-center lg:gap-20">
+            <div class="flex flex-col sm:mx-20">
+                <div class="flex justify-center border border-beige rounded-t-lg">
+                    <button id="show-education" class="py-6 px-28 md:py-4 md:px-24 rounded-t-lg font-bold hover:text-white hover:bg-taupe active:bg-brown focus:bg-darkBrown focus:text-white">Education</button>
+                </div>
+                <div class="flex justify-center border border-beige border-t-0 rounded-b-lg">
+                    <button id="show-skills" class="py-6 px-33 md:py-4 md:px-29 rounded-b-lg font-bold hover:text-white hover:bg-taupe active:bg-brown focus:bg-darkBrown focus:text-white">Skills</button>
+                </div>        
+            </div>
+            <div class="flex flex-col items-center md:items-start w-66">
+                <div id="education" class="pt-8 md:pt-0 block text-center md:text-left">
+                    <h1 class="uppercase font-bold text-darkBrown text-2xl leading-loose">Education</h1>
+                    <h3 class="font-bold">Diploma in Computer Science</h3>
+                    <h4>Tunku Abdul Rahman University of Management and Technology(TARUMT)</h4>
+                    <ul class="pl-24 md:pl-4">
+                        <li class="list-disc text-left pl-2">CGPA: 3.88</li>
+                    </ul>
+                    <br>
+                    <h3 class="font-bold">Malaysian Certificate of Education(SPM)</h3>
+                    <h4>Sekolah Menengah Kebangsaan Kepong (SMK Kepong)</h4>
+                    <ul class="pl-24 md:pl-4">
+                        <li class="list-disc text-left pl-2">SPM: 7As</li>
+                    </ul>
+                </div>
+                <div id="skills" class="pt-8 md:pt-0 hidden">
+                    <h1 class="uppercase font-bold text-darkBrown text-2xl text-center md:text-left">Skills</h1>
+                    <h3 class="font-bold">Programming Languages</h3>
+                    <ul class="pl-4">
+                        <li class="list-disc">C</li>
+                        <li class="list-disc">Java</li>
+                        <li class="list-disc">Assembly</li>
+                        <li class="list-disc">HTML</li>
+                        <li class="list-disc">CSS</li>
+                        <li class="list-disc">JavaScript</li>
+                        <li class="list-disc">Oracle SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="border-lightBrown mx-8">
+    <section id="project" class="py-16 scroll-mt-14">
+        <div class="flex justify-center">
+            <h1 class="uppercase font-bold text-darkBrown text-2xl pb-14">Projects</h1>
+        </div>
+        <div id="projects" class="flex flex-col items-center md:flex-row flex-wrap md:justify-center gap-24 ml-13 pb-5"> 
+            <!-- loading -->
+            <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-20 animate-spin"
+                > 
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="bg-darkBrown p-8">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="uppercase font-bold text-white text-2xl pb-2">Contact</h1>
+            <div class="flex">
+                <span class="text-beige pr-1">Email:</span>
+                <a class="text-beige hover:text-lightBrown" href="mailto:wanshueny@gmail.com">wanshueny@gmail.com</a> 
+            </div>
+            <span class="text-beige">Phone Number: 011-35631918</span>
+            <div class="flex flex-wrap justify-center gap-5 p-2">
+                <a href="#">
+                    <img class="transition ease-in transform hover:scale-125 rounded-full w-9 h-9" src="/pic/fb.jpeg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img class="transition ease-in transform hover:scale-125 rounded-full w-9 h-9" src="/pic/ig.jpeg" alt="instagram">
+                </a>
+                <a href="#">
+                    <img class="transition ease-in transform hover:scale-125 rounded-full w-9 h-9" src="/pic/in.jpeg" alt="linkedin">
+                </a>
+                <a href="#">
+                    <img class="transition ease-in transform hover:scale-125 rounded-full w-9 h-9" src="/pic/github.png" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
